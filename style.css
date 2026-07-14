@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Pretendard",sans-serif;
+    background:#061326;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* ------------------------- */
+/* 첫 화면 */
+/* ------------------------- */
+
+#home{
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+
+    background:
+    linear-gradient(
+        to bottom,
+        #030817 0%,
+        #07172f 40%,
+        #0a2340 70%,
+        #10385c 100%
+    );
+
+    overflow:hidden;
+
+}
+
+/* 달 */
+
+.moon{
+
+    width:170px;
+    height:170px;
+
+    border-radius:50%;
+
+    background:#f8f7ef;
+
+    box-shadow:
+
+    0 0 40px rgba(255,255,220,.8),
+    0 0 80px rgba(255,255,220,.3);
+
+    margin-bottom:40px;
+
+}
+
+/* 제목 */
+
+h1{
+
+    font-size:60px;
+
+    letter-spacing:2px;
+
+}
+
+h2{
+
+    margin-top:10px;
+
+    font-size:38px;
+
+    font-weight:400;
+
+}
+
+/* 설명 */
+
+.subtitle{
+
+    margin-top:25px;
+
+    text-align:center;
+
+    line-height:1.8;
+
+    color:#d7e7ff;
+
+}
+
+/* 버튼 */
+
+button{
+
+    margin-top:45px;
+
+    padding:18px 42px;
+
+    border:none;
+
+    border-radius:999px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    background:white;
+
+    color:#0a2340;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/* ------------------------- */
+/* 아래 소개 화면 */
+/* ------------------------- */
+
+#intro{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#081a31;
+
+}
+
+.card{
+
+    width:85%;
+
+    max-width:700px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:25px;
+
+    padding:50px;
+
+    text-align:center;
+
+}
+
+.card h2{
+
+    margin-bottom:20px;
+
+}
+
+.card p{
+
+    line-height:2;
+
+    color:#d5e5ff;
+
+}
